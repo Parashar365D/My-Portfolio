@@ -15,7 +15,9 @@ function Home() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const API = 'http://localhost:5000';
+    const API = import.meta.env.VITE_API;
+    console.log(API);
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -39,7 +41,6 @@ function Home() {
                     progress: undefined,
                     theme: "dark",
                 });
-                console.log('Message send successfully');
                 setFormData({ name: "", email: "", subject: "", message: "" });
             } else {
                 toast.error('Error sending message!', {
@@ -52,7 +53,7 @@ function Home() {
                     progress: undefined,
                     theme: "dark",
                 });
-                console.error('Error sending message');
+                setFormData({ name: "", email: "", subject: "", message: "" });
             }
         } catch (error) {
             toast.warn('Network error!', {
@@ -65,7 +66,7 @@ function Home() {
                 progress: undefined,
                 theme: "dark",
             });
-            console.error('Network error:', error);
+            setFormData({ name: "", email: "", subject: "", message: "" });
         }
     };
 
@@ -82,7 +83,7 @@ function Home() {
                             <h1 className='text-4xl md:text-6xl font-semibold mb-4'>Hi, I AM<br />CHETAN PARASHAR<span className='text-base'>&#9632;</span></h1>
                             <p className='text-sm md:text-lg text-gray-300 mb-4 md:w-4/5'>I am a MERN stack web developer who enjoys building user-friendly apps with clean code.</p>
                             <div className='flex items-center md:gap-8 gap-4'>
-                                <a href='#contact' className='rounded-full md:p-4 p-3 bg-[#D3E97A] text-black font-bold text-base hover:scale-105'>CONTACT ME <span className='bg-black text-white rounded-full md:px-4 md:py-3 px-2 py-1 text-sm ml-1 md:ml-2'><i className="fa-solid fa-location-arrow"></i></span></a>
+                                <a href='#contact' className='rounded-full md:p-4 p-3 bg-[#D3E97A] text-black font-bold text-base hover:scale-105'>CONTACT ME <span className='bg-black text-white rounded-full md:px-4 md:py-3 px-2 py-1.5 text-sm ml-1 md:ml-2'><i className="fa-solid fa-location-arrow"></i></span></a>
                                 <a href='https://www.linkedin.com/in/chetan-parashar-365d' target='_blank' className='bg-[#222222] text-[#D3E97A] rounded-full px-4 py-2.5 text-2xl hover:scale-105'><i className="fa-brands fa-linkedin"></i></a>
                                 <a href='https://github.com/Parashar365D' className='bg-[#222222] text-[#D3E97A] rounded-full px-4 py-2.5 text-2xl hover:scale-105'><i className="fa-brands fa-github"></i></a>
                             </div>

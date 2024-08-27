@@ -7,9 +7,9 @@ Welcome to my portfolio! I'm Chetan Parashar, a passionate web developer special
 
 - Home
 - works
-  - [Girlish Glam](#girlish-glam)
-  - [Gwalior Cab Services](#gwalior-cab-services)
-  - [PassKeeper](#passkeeper)
+  - [Girlish Glam](https://girlish-glam.onrender.com/)
+  - [Gwalior Cab Services](https://cab-service-one.vercel.app/)
+  - [PassKeeper](https://passkeeper.onrender.com/)
 - About Me
   - Skills
 - Contact me
@@ -58,7 +58,7 @@ To run this portfolio locally:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Parashat365D/My-Portfolio.git
+   git clone https://github.com/Parashat365D/Portfolio.git
    ```
 
 2. **Navigate to the project directory:**
