@@ -124,7 +124,7 @@ function Home() {
                                     <h3 className='font-sans text-sm md:text-base text-gray-200 mb-4'>Full-Stack Developer</h3>
                                 </div>
                                 <div className='flex items-center justify-start md:justify-normal md:gap-8 gap-4 mb-10 md:mb-0'>
-                                    <a className='text-[#D3E97A] underline underline-offset-8 text-sm md:text-lg font-inter font-normal hover:scale-105' href="https://girlish-glam.onrender.com/" target="_blank" rel="noopener noreferrer">LIVE DEMO <i className="fa-solid fa-square-arrow-up-right"></i></a>
+                                    <a className='text-[#D3E97A] underline underline-offset-8 text-sm md:text-lg font-inter font-normal hover:scale-105' href="https://girlish-glam-1.onrender.com/" target="_blank" rel="noopener noreferrer">LIVE DEMO <i className="fa-solid fa-square-arrow-up-right"></i></a>
                                     <a className='text-[#D3E97A] underline underline-offset-8 text-sm md:text-lg font-inter font-normal hover:scale-105' href="https://github.com/Parashar365D/Girlish-Glam" target="_blank" rel="noopener noreferrer">SEE ON GITHUB <i className="fa-brands fa-github"></i></a>
                                 </div>
                             </div>
